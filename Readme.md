@@ -221,3 +221,6 @@ drop service elasticsearcg_svc FORCE;
 drop compute pool PR_CPU_M;
 
 ```
+
+## References
+[Working with an image registry and repository](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/working-with-registry-repository#image-registry-hostname)
