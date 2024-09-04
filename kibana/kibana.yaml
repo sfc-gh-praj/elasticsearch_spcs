@@ -1,0 +1,15 @@
+spec:
+  containers:
+    - name: kibana-container
+      image: sfseeurope-us-west-ccarrero-452.registry.snowflakecomputing.com/pr_llmdemo/public/images/kibana:latest
+      env:
+        ELASTICSEARCH_HOSTS: http://elasticsearcg-svc:9200
+        cluster.name: es_cluster
+        XPACK_SECURITY_ENABLED: false
+        xpack.security.enrollment.enabled: false
+
+
+  endpoints:
+    - name: http
+      port: 5601
+      public: true

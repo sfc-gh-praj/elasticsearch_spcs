@@ -1,0 +1,23 @@
+spec:
+  containers:
+    - name: elasticsearch
+      image: sfseeurope-us-west-ccarrero-452.registry.snowflakecomputing.com/pr_llmdemo/public/images/elasticsearch_cust:latest
+      env:
+        cluster.name: es_cluster
+        discovery.type: single-node
+        xpack.security.enabled: false
+        xpack.security.enrollment.enabled: false
+      volumeMounts:
+        - name: elasticsearch-data
+          mountPath: /usr/share/elasticsearch/data
+  volumes:
+    - name: elasticsearch-data
+      source: block
+      size: 10Gi
+  endpoints:
+    - name: http
+      port: 9200
+      public: true
+    - name: transport
+      port: 9300
+      public: true
