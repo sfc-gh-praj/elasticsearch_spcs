@@ -1,7 +1,7 @@
 ELASTIC_SEARCH_IMAGE=elasticsearch_cust
 KIBANA_IMAGE=kibana
-SNOWFLAKE_REPO?=sfseeurope-us-west-ccarrero-452.registry.snowflakecomputing.com/pr_llmdemo/public/images
-IMAGE_REGISTRY=sfseeurope-us-west-ccarrero-452.registry.snowflakecomputing.com
+SNOWFLAKE_REPO?=<orgname-accountname>.registry.snowflakecomputing.com/ESDemo/public/images
+IMAGE_REGISTRY=<orgname-accountname>.registry.snowflakecomputing.com
 
 
 help: ## Show this help.
