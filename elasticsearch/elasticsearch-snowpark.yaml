@@ -1,7 +1,7 @@
 spec:
   containers:
     - name: elasticsearch
-      image: sfseeurope-us-west-ccarrero-452.registry.snowflakecomputing.com/pr_llmdemo/public/images/elasticsearch_cust:latest
+      image: <orgname-accountname>.registry.snowflakecomputing.com/ESDemo/public/images/elasticsearch_cust:latest
       env:
         cluster.name: es_cluster
         discovery.type: single-node

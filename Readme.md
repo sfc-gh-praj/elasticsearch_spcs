@@ -208,6 +208,8 @@ In the logs you will see a line at the end for the `verification code` and use t
 
 By now you are all set to use Kibana and you can use sample data to load data into Elastic Search use dev tool to view the data from the same console.
 
+![kibana](/kibana.png)
+
 ### 7. Cleanup
 
 ```sql

@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  es8:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.9.1
+    container_name: es8
+    environment:
+      - node.name=es8
+      - cluster.name=es_cluster
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - xpack.security.enrollment.enabled=false
+
+    volumes:
+      - data:/usr/share/elasticsearch/data
+    
+    ports:
+      - 9200:9200
+
+volumes:
+  data:
+    driver: local
+
+
+    

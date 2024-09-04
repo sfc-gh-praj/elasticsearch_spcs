@@ -1,7 +1,7 @@
 spec:
   containers:
     - name: kibana-container
-      image: sfseeurope-us-west-ccarrero-452.registry.snowflakecomputing.com/pr_llmdemo/public/images/kibana:latest
+      image: <orgname-accountname>.registry.snowflakecomputing.com/ESDemo/public/images/kibana:latest
       env:
         ELASTICSEARCH_HOSTS: http://elasticsearcg-svc:9200
         cluster.name: es_cluster
